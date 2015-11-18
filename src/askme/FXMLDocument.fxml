@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="504.0" prefWidth="386.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="askme.FXMLDocumentController">
+   <children>
+      <HBox fx:id="paneTitulo" alignment="CENTER" layoutX="17.0" layoutY="85.0" prefHeight="86.0" prefWidth="349.0">
+         <children>
+            <Label fx:id="lbTitulo" text="¿Qué estoy pensando?..." />
+         </children>
+      </HBox>
+      <HBox fx:id="panePregunta" alignment="CENTER" layoutX="17.0" layoutY="200.0" prefHeight="143.0" prefWidth="349.0">
+         <children>
+            <Label fx:id="lbPregunta" />
+         </children>
+      </HBox>
+      <HBox fx:id="paneSeleccion" alignment="CENTER" layoutX="17.0" layoutY="426.0" prefHeight="64.0" prefWidth="349.0" visible="false">
+         <children>
+            <Button fx:id="btnSi" mnemonicParsing="false" onAction="#DesplazarIzq" text="Si">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnNo" mnemonicParsing="false" onAction="#DesplazarDer" text="No">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Button fx:id="cerrar" layoutX="17.0" layoutY="14.0" mnemonicParsing="false" onAction="#close" text="X" />
+      <Button fx:id="ayuda" layoutX="51.0" layoutY="14.0" mnemonicParsing="false" onAction="#creditos" text="?" />
+      <HBox fx:id="paneNuevaPregunta" alignment="CENTER" layoutX="17.0" layoutY="362.0" prefHeight="64.0" prefWidth="349.0" visible="false">
+         <children>
+            <TextField fx:id="txtNuevaPregunta" prefHeight="27.0" prefWidth="340.0" />
+         </children>
+      </HBox>
+      <HBox fx:id="paneInicio" alignment="CENTER" layoutX="17.0" layoutY="426.0" prefHeight="64.0" prefWidth="349.0">
+         <children>
+            <Button fx:id="btnInicio" mnemonicParsing="false" onAction="#InicioJuego" text="Iniciar Juego">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox fx:id="paneEnviarDatos" alignment="CENTER" layoutX="7.0" layoutY="426.0" prefHeight="64.0" prefWidth="361.0" visible="false">
+         <children>
+            <Button fx:id="btnEnviar" mnemonicParsing="false" onAction="#Insertar" text="Enviar">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Button fx:id="btnDepuracion" layoutX="84.0" layoutY="14.0" mnemonicParsing="false" onAction="#Depuracion" text="Depuración" />
+   </children>
+</AnchorPane>

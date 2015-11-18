@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="554.0" prefWidth="703.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="depuracion.FXMLDepuracionController">
+   <children>
+      <VBox fx:id="vbCanvas" alignment="CENTER" layoutX="23.0" layoutY="16.0" prefHeight="515.0" prefWidth="516.0">
+         <children>
+            <Canvas fx:id="canvasMain" height="515.0" width="515.0" />
+         </children>
+      </VBox>
+      <VBox fx:id="vbInformacion" alignment="TOP_CENTER" layoutX="550.0" layoutY="16.0" prefHeight="428.0" prefWidth="139.0">
+         <children>
+            <Label fx:id="lbTitulo" text="Modo Depuración" />
+         </children>
+      </VBox>
+      <Button fx:id="btnSalir" layoutX="610.0" layoutY="506.0" mnemonicParsing="false" onAction="#close" prefHeight="27.0" prefWidth="72.0" text="Salir" />
+   </children>
+</AnchorPane>

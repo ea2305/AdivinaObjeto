@@ -1,0 +1,38 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14-nov-2015, 17:40:47
+    Author     : gerem
+*/
+
+.root{
+    -fx-background-color: linear-gradient(#FBC02D,white);
+}
+
+.button{
+    -fx-text-fill: white;
+    -fx-background-radius: 50px;
+    -fx-background-color: linear-gradient(#FF5252,#FF7979);
+}
+
+.label{
+    -fx-font-family: Gill Sans;
+    -fx-text-fill: white;
+}
+
+#paneTitulo{
+    -fx-font-size: 20px;
+    -fx-background-radius: 20px;
+    -fx-background-color: #FF5252;
+}
+
+#panePregunta{
+    -fx-font-size: 15px;
+    -fx-border-color: white;
+    -fx-border-radius: 20px;
+    -fx-background-color: #FBC02D;
+    -fx-background-radius: 20px;
+}
