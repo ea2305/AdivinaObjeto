@@ -1,39 +1,44 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package askme;
+/**
+    *   Arbol binario para adivina un transporte
+    *@author Elihu Alejandro Cruz Albores
+    *@version 1.3
+*/
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
-/**
- *
- * @author gerem
- */
 public class AskMe extends Application {
-    
-    @Override
+
+    /**
+     *  Cargador del aplicacion
+     *@param stage : Tipo Stage ue recive el stage para instancia.
+     */
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
         
+        FXMLLoader myLoader = new FXMLLoader
+        (getClass().getResource("/askme/FXMLDocument.fxml"));
+        Parent root = (Parent) myLoader.load();
+        FXMLDocumentController myController = myLoader.getController();
         Scene scene = new Scene(root);
+        myController.setParent(stage);
         
-        stage.setScene(scene);
         scene.getStylesheets().add
         (FXMLDocumentController.class.getResource("/utilerias/Gamestyle.css").toExternalForm());
+        
+        //stage.initStyle(StageStyle.TRANSPARENT);
+        
+        stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
     }
 
-    /**
-     * @param args the command line arguments
-     */
+    //main :v
     public static void main(String[] args) {
         launch(args);
     }
-    
 }

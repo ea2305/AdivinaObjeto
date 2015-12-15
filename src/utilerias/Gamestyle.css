@@ -20,19 +20,32 @@ and open the template in the editor.
 
 .label{
     -fx-font-family: Gill Sans;
-    -fx-text-fill: white;
+    -fx-text-fill: whitesmoke;
 }
 
 #paneTitulo{
     -fx-font-size: 20px;
+    -fx-text-fill: white;
     -fx-background-radius: 20px;
-    -fx-background-color: #FF5252;
+    -fx-background-color: rgb(255,82,82,.87);
 }
 
 #panePregunta{
     -fx-font-size: 15px;
+    -fx-text-fill: white;
     -fx-border-color: white;
     -fx-border-radius: 20px;
-    -fx-background-color: #FBC02D;
+    -fx-background-color: rgb(248,94,28,.7);
     -fx-background-radius: 20px;
+}
+
+#vbInformacion{
+    -fx-background-color: linear-gradient(#FF5C39,#FF9639);
+    -fx-background-radius: 10;
+    -fx-font-famliy: Impact;
+}
+
+#paneCanvas{
+    -fx-background-color: linear-gradient(#F1FFB1,#FF9639);
+    -fx-background-radius: 10;
 }

@@ -7,16 +7,19 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="504.0" prefWidth="386.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="askme.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="504.0" prefWidth="386.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="askme.FXMLDocumentController">
    <children>
       <HBox fx:id="paneTitulo" alignment="CENTER" layoutX="17.0" layoutY="85.0" prefHeight="86.0" prefWidth="349.0">
          <children>
-            <Label fx:id="lbTitulo" text="¿Qué estoy pensando?..." />
+            <Label fx:id="lbTitulo" textAlignment="CENTER"/>
          </children>
       </HBox>
-      <HBox fx:id="panePregunta" alignment="CENTER" layoutX="17.0" layoutY="200.0" prefHeight="143.0" prefWidth="349.0">
+      <HBox fx:id="panePregunta" alignment="CENTER" layoutX="17.0" layoutY="200.0" prefHeight="143.0" prefWidth="349.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
          <children>
-            <Label fx:id="lbPregunta" />
+            <Label fx:id="lbPregunta" textAlignment="CENTER">
+               <HBox.margin>
+                  <Insets left="7.0" right="7.0" />
+               </HBox.margin></Label>
          </children>
       </HBox>
       <HBox fx:id="paneSeleccion" alignment="CENTER" layoutX="17.0" layoutY="426.0" prefHeight="64.0" prefWidth="349.0" visible="false">
@@ -34,7 +37,6 @@
          </children>
       </HBox>
       <Button fx:id="cerrar" layoutX="17.0" layoutY="14.0" mnemonicParsing="false" onAction="#close" text="X" />
-      <Button fx:id="ayuda" layoutX="51.0" layoutY="14.0" mnemonicParsing="false" onAction="#creditos" text="?" />
       <HBox fx:id="paneNuevaPregunta" alignment="CENTER" layoutX="17.0" layoutY="362.0" prefHeight="64.0" prefWidth="349.0" visible="false">
          <children>
             <TextField fx:id="txtNuevaPregunta" prefHeight="27.0" prefWidth="340.0" />
@@ -58,6 +60,6 @@
             </Button>
          </children>
       </HBox>
-      <Button fx:id="btnDepuracion" layoutX="84.0" layoutY="14.0" mnemonicParsing="false" onAction="#Depuracion" text="Depuración" />
+      <Button fx:id="btnDepuracion" layoutX="59.0" layoutY="14.0" mnemonicParsing="false" onAction="#Depuracion" text="Depuración" />
    </children>
 </AnchorPane>
